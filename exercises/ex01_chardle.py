@@ -1,8 +1,9 @@
-__author__= "730480669"
+__author__ = "730480669"
 
 word: str = input("Enter a 5-character word:")
 if len(word) != 5:
-    print("Error: Word must contain 5 characters") 
+    print("Error: Word must contain 5 characters")
+    exit() 
 else:   
     letter: str = input("Enter a single character:")
     if len(letter) != 1:
@@ -21,7 +22,7 @@ else:
         if letter == word[4]:
             print(letter + " found at index" + " 4")
         if letter not in word:
-            print("No instances of "+letter+" found in "+word)
+            print("No instances of " + letter + " found in "+ word)
     word_count = word.count(letter)
     if letter in word:
         if word_count == 1:
