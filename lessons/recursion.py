@@ -21,7 +21,7 @@ def sum(node: Optional[Node]) -> int:
     if node == None:
         return 0
     else:
-        return node.data +sum(node.next)
+        return node.data + sum(node.next)
 
 
 def count(node: Optional[Node], current_count: int = 0) -> int:
